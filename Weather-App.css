@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.772);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: black;
+    border-radius: 20px;
+    box-shadow: 0px 8px 45px gray;
+    width: 30vw;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+h1 {
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+
+.text-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px; 
+}
+
+.cityname {
+    border: none;
+    width: 60%;
+    height: 4vh;
+    background-color: whitesmoke;
+    padding-left: 10px;
+
+}
+
+input::placeholder {
+    padding-left: 10px;
+    color: black;
+}
+
+input:focus {
+    outline: none;
+}
+
+.submit {
+    background-color: whitesmoke;
+    color: #000000;
+    border: none;
+    width: 35%;
+    height: 4vh;
+}
+
+button:focus {
+    outline: none;
+}
+
+.weather-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 5px;
+}
+
+.name {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    text-decoration: none;
+}
+
+.temp {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+    margin-top: -5px;
+}
+
+.description {
+        color: white;
+        margin: 0%;
+}
+
+.weather-description img {
+    width: 110px;
+    height: auto;
+    margin: 0;
+    filter: drop-shadow(3px 6px 8px rgba(0, 0, 0, 0.25));
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #aaa;
+}
+
+.hidden {
+    display: none;
+}
+
+.extra {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.wind, .humidity {
+    color: whitesmoke;
+}
+
+.error-message {
+  color: whitesmoke;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+
+    .container {
+        width: 50vw;
+    }
+
+    h1 {
+        padding-bottom: 15px;
+    }
+
+    .weather-description {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .weather {
+        align-items: center;
+    }
+
+    .weather-description img {
+        margin-top: -20px;
+    }
+
+    .name {
+        margin-top: -20px;
+        text-align: center;
+    }
+
+    .temp {
+        margin-top: -5px;
+    }
+
+    .description {
+        margin-top: 10px;
+    }
+
+}
+
+@media (min-width:300px) and (max-width:600px) {
+
+    .container {
+        width: 70vw;
+    }
+
+    h1 {
+        padding-bottom: 15px;
+    }
+
+    input::placeholder {
+        padding-left: 5px;
+    }
+
+    .text-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .cityname {
+        width: 70%;
+        padding: 0px;
+    }
+
+    .submit {
+        width: 40%;
+    }
+
+    .weather-description {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .weather {
+        align-items: center;
+    }
+
+    .weather-description img {
+        margin-top: -20px;
+    }
+
+    .name {
+        margin-top: -20px;
+        text-align: center;
+    }
+
+    .temp {
+        margin-top: -5px;
+    }
+
+    .description {
+        margin-top: 4px;
+    }
+
+    .extra {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+}
+
+@media (min-width:200px) and (max-width:300px) {
+
+    .container {
+        width: 80vw;
+    }
+
+    h1 {
+        padding-bottom: 15px;
+    }
+
+    .text-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .cityname {
+        width: 70%;
+        padding: 0px;
+    }
+
+    .submit {
+        width: 40%;
+    }
+
+    input::placeholder {
+        font-size: xx-small;
+        padding-left: 3px;
+    }
+
+    button {
+        font-size: x-small;
+    }
+
+    .weather-description {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .weather {
+        align-items: center;
+    }
+
+    .weather-description img {
+        margin-top: -20px;
+        width: 100px;
+    }
+
+    .name {
+        margin-top: -20px;
+        text-align: center;
+        font-size: large;
+    }
+
+    .temp {
+        margin-top: -7px;
+    }
+
+    .description {
+        margin-top: 4px;
+    }
+
+}
